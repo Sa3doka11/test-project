@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/Home_St.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">
+        <h2><img src="src/images/logo.png" class="img-logo" />EDU</h2>
+      </div>
+      <ul class="sidebar__list">
+        <li id="home" class="Sli homeli active-button"> <a class="nav__link" href="home.html">Home</a></li>
+        <li id="courses" class="Sli couli"><a class="nav__link" href="courses.html">Courses</a></li>
+        <li id="calendar" class="Sli calli"><a class="nav__link" href="calandar.html">Calendar</a></li>
+        <li id="chats" class="chatli">
+          <a class="Sli" href="chats.html">Chats</a>
+        </li>
+        <li class="log-out"><button class="Btn" href="index.html">
+            <div class="sign"><svg viewBox="0 0 512 512">
+                <path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 
+20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128
+  0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 
+  17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 
+  14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 
+  32 32s-14.3 32-32 32z"></path>
+              </svg>
+            </div>
+            <div class="text">Logout</div>
+          </button>
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <P class="searchReplace1">
+      </P>
+      <div class="welcome">
+        <div class="left">
+          <p class="goodMorning"  >Welcome <span id="goodMorning"> Sa3doka</span></p>
+          <p class="niceDay">Have a nice day !</p>
+        </div>
+        <div class="right">
+          <img src="src/images/welcome.png" alt="User Photo" />
+
+
+        </div>
+      </div>
+      <div class="Wdeadline">
+        <p class="deadline-title">Weakly Deadline :</p>
+        <div class="deadlineBoxes">
+          <div class="box" id="assignmentCard">
+            <div class="upper" id="title">MOT</div>
+            <div class="lower" id="type">Assignment</div>
+            <div class="box__time-container">
+              <p class="box__time" id="date">5 oct sun</p>
+              <img class="imgCard" src="src/images/icons8-clock-60.png" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="upper">ITI</div>
+            <div class="lower">Assignment</div>
+            <div class="box__time-container">
+              <p class="box__time">3 nov mon</p>
+              <img class="imgCard" src="src/images/icons8-clock-60.png" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="upper">SAD</div>
+            <div class="lower">Presentation</div>
+            <div class="box__time-container">
+              <p class="box__time">19 oct wed</p>
+              <img class="imgCard" src="src/images/icons8-clock-60.png" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="upper">Database</div>
+            <div class="lower">Assignment</div>
+            <div class="box__time-container">
+              <p class="box__time">6 oct sat</p>
+              <img class="imgCard" src="src/images/icons8-clock-60.png" />
+            </div>
+          </div>
+        </div>
+      </div><br>
+
+
+
+      <div class="courses-wrapper">
+        <div class="course-card">
+          <h3>Today’s Schedule</h3>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 60%">
+              <span class="progress-text">60%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <h3>Backend Development</h3>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 80%">
+              <span class="progress-text">80%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </P>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="user-profile">
+      <div class="user-info">
+        <img src="src/images/userSaad.jpg" class="img" /><br>
+        <h3>Alexandria University</h3><br>
+        <div class="lines-container">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div><br>
+        </div><br>
+        <div class="user-p">
+          <p><span class="label">Name:</span> <span class="value" id="namw"></span></p><br>
+          <p><span class="label">ID:</span> <span class="value" id="id"></span></p><br>
+          <p><span class="label">GPA:</span> <span class="value" id="gpa"></span></p><br>
+          <p><span class="label">Major:</span> <span class="value" id="dep"></span></p><br>
+          <p><span class="label">Level:</span> <span class="value" id="class"></span></p><br>
+        </div>
+
+      </div>
+
+      <div class="calendar-container">
+        <div class="calendar-header">
+        </div>
+        <div class="calendar-days">
+          <div class="day">Sat <span>4</span></div>
+          <div class="day">Sun <span>5</span></div>
+          <div class="day">Mon <span>6</span></div>
+          <div class="day active">Tue <span>7</span></div>
+          <div class="day">Wed <span>8</span></div>
+          <div class="day">Thu <span>9</span></div>
+          <div class="day">Fri <span>10</span></div>
+        </div>
+        <div class="today-schedule">
+          <h4>Today’s Schedule</h4>
+          <div class="schedule-grid">
+            <div class="schedule-item">
+              <p>Programming Lecture</p>
+              <span>At 8 am</span>
+            </div>
+            <div class="schedule-item">
+              <p>MOT Section</p>
+              <span>At 1 pm</span>
+            </div>
+            <div class="schedule-item">
+              <p>DBMS Section</p>
+              <span>At 2 pm</span>
+            </div>
+            <div class="schedule-item">
+              <p>SA Lecture</p>
+              <span>At 5 pm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <script>
+
+    const buttons = document.querySelectorAll("#home, #calendar, #courses, #chats");
+    const hoverElement = document.getElementById("hoverElement");
+
+    function resetButtonColors() {
+      buttons.forEach((button) => {
+        button.classList.remove("active-button");
+      });
+    }
+
+    buttons.forEach((button) => {
+      const positionMap = {
+        home: "109px",
+        calendar: "202px",
+        courses: "297px",
+        chats: "389px",
+      };
+
+      button.addEventListener("click", function () {
+        resetButtonColors();
+
+        // تغيير لون النص عند الضغط
+        this.classList.add("active-button");
+
+        // تحريك الـ hoverElement ليتناسب مع مكان الـ section الأوسط
+        hoverElement.style.top = positionMap[this.id];
+      });
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+    // Fetching data from Supabase
+    const BASE_URL = "https://iuiwdjtmdeempcqxeuhf.supabase.co/rest/v1/student";
+  const API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml1aXdkanRtZGVlbXBjcXhldWhmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ3NTY1MDcsImV4cCI6MjA2MDMzMjUwN30.XfSmnKA8wbsXIA1qkfYaRkzxtEdudIDNYbSJu-M5Zag"; // نسختك
+
+  const studentId = sessionStorage.getItem("studentId");
+
+  function fetchStudentData() {
+    if (!studentId) {
+      alert("لم يتم تسجيل الدخول.");
+      return;
+    }
+
+    fetch(`${BASE_URL}?student_id=eq.${studentId}&select=*`, {
+      headers: {
+        "apikey": API_KEY,
+        "Authorization": `Bearer ${API_KEY}`,
+      },
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.length > 0) {
+        const student = data[0];
+        document.getElementById("namw").textContent = student.student_name;
+        document.getElementById("id").textContent = student.student_id;
+        document.getElementById("gpa").textContent = student.student_cgpa;
+        document.getElementById("dep").textContent = student.student_major;
+        document.getElementById("class").textContent = student.student_level;
+        document.getElementById("goodMorning").textContent = student.student_name;
+      } else {
+        alert("لم يتم العثور على الطالب.");
+      }
+    })
+    .catch(error => {
+      console.error("خطأ:", error);
+    });
+  }
+
+  fetchStudentData();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
